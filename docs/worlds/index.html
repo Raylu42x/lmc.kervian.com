@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worlds | LMC Kervian</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="nav-bar">
+
+    <!-- ── Site title (top-left) ────────────────────── -->
+    <a class="site-title" href="/">LMC</a>
+
+    <!-- ── Hamburger (mobile only, auto-generated) ──── -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ── Nav links ────────────────────────────────── -->
+    <!-- Add or remove <li> items here to change the nav -->
+    <ul class="nav-links">
+      <li><a href="/join/">Join</a></li>
+      <li><a href="/commands/">Commands</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/map/">Map</a></li>
+      <li><a href="/worlds/">Worlds</a></li>
+      <li><a href="/staff/">Staff</a></li>
+      <li><a href="/claims/">Claims</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a></li>
+      <!-- <li><a href="/your-page/">Your Page</a></li> -->
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main>
+    <h1>Worlds</h1>
+<h2>Survival</h2>
+<p><strong>Spawn:</strong> <code>-77, 72, -21</code></p>
+<p>Survival with some plugins.</p>
+<p><strong>Command:</strong> <code>/warp survival</code></p>
+<hr>
+<h2>SMP (Vanilla)</h2>
+<p><strong>Spawn:</strong> <code>380, 64, 120</code></p>
+<p>Vanilla survival with lots of room to explore.</p>
+<p><strong>Command:</strong> <code>/warp smpworld</code></p>
+<hr>
+<h2>Creative</h2>
+<p><strong>Spawn:</strong> <code>112, 71, -208</code></p>
+<p>Creative world with tons of builds.</p>
+<p><strong>Command:</strong> <code>/warp creative</code></p>
+<hr>
+<h2>Hub World</h2>
+<p><strong>Spawn:</strong> <code>152, -40, 325</code></p>
+<p>Hub has portals to other worlds and a forest to explore.</p>
+<p><strong>Command:</strong> <code>/hub</code></p>
+<hr>
+<h2>Tutorial (Old Hub)</h2>
+<p>Old hub with tutorials and guides.</p>
+<p><strong>Command:</strong> <code>/warp oldhub</code></p>
+<hr>
+<h1>Mini Games</h1>
+<h2>Dropper</h2>
+<p><strong>World:</strong> Dropper</p>
+<p><strong>Location:</strong> Through the Dropper portal in the Hub</p>
+<p><em>In progress</em></p>
+<hr>
+<h2>Hide and Seek</h2>
+<p><strong>World:</strong> Mini Games</p>
+<p><strong>Command:</strong> <code>/warp hide_and_seek</code></p>
+<p><em>In progress</em></p>
+<hr>
+<h2>PvP</h2>
+<p><strong>World:</strong> Creative</p>
+<p><strong>Location:</strong> <code>103, 71, -266</code></p>
+<p>Walk in to be switched to survival with whatever you have.</p>
+<hr>
+<h2>Parkour — Spiral</h2>
+<p><strong>World:</strong> Parkour_spiral</p>
+<p><strong>Location:</strong> Through the Portals</p>
+<p>Try to make the scoreboard!</p>
+<hr>
+<h2>Parkour — Biome Run</h2>
+<p><strong>World:</strong> Pk BRR</p>
+<p><strong>Location:</strong> Through the Portals</p>
+<p>See if you can complete one of the many courses.</p>
+
+  </main>
+
+  <footer>
+  <p>&copy; 2026 Bennett. &mdash; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Licensed under CC BY-NC 4.0</a></p>
+</footer>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claims | LMC Kervian</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="nav-bar">
+
+    <!-- ── Site title (top-left) ────────────────────── -->
+    <a class="site-title" href="/">LMC</a>
+
+    <!-- ── Hamburger (mobile only, auto-generated) ──── -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ── Nav links ────────────────────────────────── -->
+    <!-- Add or remove <li> items here to change the nav -->
+    <ul class="nav-links">
+      <li><a href="/join/">Join</a></li>
+      <li><a href="/commands/">Commands</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/map/">Map</a></li>
+      <li><a href="/worlds/">Worlds</a></li>
+      <li><a href="/staff/">Staff</a></li>
+      <li><a href="/claims/">Claims</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a></li>
+      <!-- <li><a href="/your-page/">Your Page</a></li> -->
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main>
+    <div class="embed-page">
+<h1>Claims</h1>
+<p>Learn how to claim land on the server.</p>
+<a class="video-link" href="https://www.youtube.com/watch?v=VDsjXB-BaE0&list=PL6diNfcl9_VzUvUvQWrDsQfYoSs3Oizly&index=2" target="_blank" rel="noopener">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 15l5.19-3L10 9v6zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+  Watch the Claims Tutorial on YouTube
+</a>
+</div>
+<h1>GriefPrevention Player Guide</h1>
+<p>This server uses the <strong>GriefPrevention</strong> plugin to protect player builds from griefing, stealing, and unwanted changes.</p>
+<p>This guide explains:</p>
+<ul>
+<li>What claims are</li>
+<li>How to create and manage claims</li>
+<li>How to give other players access</li>
+<li>Commands you can use</li>
+</ul>
+<hr>
+<h1>Command Quick Reference</h1>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/claimslist</code></td>
+<td>Shows your claims and available claim blocks</td>
+</tr>
+<tr>
+<td><code>/trust &lt;player&gt;</code></td>
+<td>Allows a player to build and interact in your claim</td>
+</tr>
+<tr>
+<td><code>/containertrust &lt;player&gt;</code></td>
+<td>Allows a player to open containers but not build</td>
+</tr>
+<tr>
+<td><code>/accesstrust &lt;player&gt;</code></td>
+<td>Allows a player to use doors, buttons, and switches</td>
+</tr>
+<tr>
+<td><code>/untrust &lt;player&gt;</code></td>
+<td>Removes permissions from a player</td>
+</tr>
+<tr>
+<td><code>/untrust all</code></td>
+<td>Removes permissions from everyone</td>
+</tr>
+<tr>
+<td><code>/abandonclaim</code></td>
+<td>Deletes the claim you are standing in</td>
+</tr>
+<tr>
+<td><code>/abandonallclaims</code></td>
+<td>Deletes all your claims</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1>What Is a Claim?</h1>
+<p>A <strong>claim</strong> is a protected area of land that belongs to you.</p>
+<p>When you create a claim:</p>
+<ul>
+<li>Other players <strong>cannot break your blocks</strong></li>
+<li>Other players <strong>cannot place blocks</strong></li>
+<li>Other players <strong>cannot open your chests</strong></li>
+<li>Other players <strong>cannot steal items</strong></li>
+<li>Your builds are <strong>protected from griefing</strong></li>
+</ul>
+<p>Only <strong>you</strong> control what happens inside your claim unless you give permission to others.</p>
+<p>Think of a claim like <strong>owning land</strong> in the world.</p>
+<p>If land is <strong>not claimed</strong>, anyone can modify it.</p>
+<hr>
+<h1>Claim Blocks</h1>
+<p>Claims use <strong>claim blocks</strong> to determine how much land you can protect.</p>
+<p>You gain claim blocks by:</p>
+<ul>
+<li>Playing on the server</li>
+<li>Server rewards</li>
+<li>Admin events</li>
+</ul>
+<p>You can check your claim blocks using:</p>
+<p><code>/claimslist</code></p>
+<p>This command shows:</p>
+<ul>
+<li>Your claims</li>
+<li>Available claim blocks</li>
+<li>Claim sizes</li>
+</ul>
+<hr>
+<h1>Creating Your First Claim</h1>
+<p>To create a claim you need a <strong>Golden Shovel</strong>.</p>
+<h2>Steps</h2>
+<ol>
+<li>Hold a <strong>Golden Shovel</strong></li>
+<li>Right-click the <strong>first corner</strong> of the land</li>
+<li>Walk to the <strong>opposite corner</strong></li>
+<li>Right-click again</li>
+</ol>
+<p>The area between those two points becomes your claim.</p>
+<p>Your land is now protected.</p>
+<hr>
+<h1>Viewing Claim Borders</h1>
+<p>Claim borders show where your protection begins and ends.</p>
+<p>To see them:</p>
+<ul>
+<li>Hold a <strong>Golden Shovel</strong></li>
+<li>Right-click inside your claim</li>
+</ul>
+<p>Markers will appear showing the corners of your claim.</p>
+<hr>
+<h1>Expanding or Resizing a Claim</h1>
+<p>You can make your claim bigger later.</p>
+<h2>Steps</h2>
+<ol>
+<li>Hold a <strong>Golden Shovel</strong></li>
+<li>Right-click a <strong>claim corner</strong></li>
+<li>Move to the new location</li>
+<li>Right-click again</li>
+</ol>
+<p>The claim will expand or shrink depending on where you place the new corner.</p>
+<p>You must have enough <strong>claim blocks</strong> available to expand.</p>
+<hr>
+<h1>Giving Other Players Access</h1>
+<p>By default <strong>only you</strong> can interact with your claim.</p>
+<p>You can allow other players access using trust commands.</p>
+<hr>
+<h2>Full Trust</h2>
+<p>Command: <code>/trust &lt;player&gt;</code></p>
+<p>Allows the player to:</p>
+<ul>
+<li>Build blocks</li>
+<li>Break blocks</li>
+<li>Open containers</li>
+<li>Use doors and switches</li>
+<li>Fully interact with the claim</li>
+</ul>
+<p>Use this for trusted friends or teammates.</p>
+<hr>
+<h2>Container Trust</h2>
+<p>Command: <code>/containertrust &lt;player&gt;</code></p>
+<p>Allows the player to:</p>
+<ul>
+<li>Open chests</li>
+<li>Use furnaces</li>
+<li>Use crafting tables</li>
+<li>Use buttons and levers</li>
+</ul>
+<p>Does NOT allow:</p>
+<ul>
+<li>Placing blocks</li>
+<li>Breaking blocks</li>
+</ul>
+<p>This is good for shared storage or farms.</p>
+<hr>
+<h2>Access Trust</h2>
+<p>Command: <code>/accesstrust &lt;player&gt;</code></p>
+<p>Allows the player to:</p>
+<ul>
+<li>Open doors</li>
+<li>Press buttons</li>
+<li>Use switches</li>
+</ul>
+<p>Does NOT allow:</p>
+<ul>
+<li>Opening containers</li>
+<li>Building or breaking blocks</li>
+</ul>
+<p>This is useful for visitors.</p>
+<hr>
+<h1>Removing Permissions</h1>
+<p>To remove a player's permissions:</p>
+<p><code>/untrust &lt;player&gt;</code></p>
+<p>To remove <strong>all players</strong> from your claim:</p>
+<p><code>/untrust all</code></p>
+<hr>
+<h1>Deleting a Claim</h1>
+<p>If you no longer want a claim, stand inside it and run:</p>
+<p><code>/abandonclaim</code></p>
+<p>This deletes the claim and returns the claim blocks.</p>
+<p>To delete <strong>all your claims</strong>:</p>
+<p><code>/abandonallclaims</code></p>
+<p>Use this carefully.</p>
+<hr>
+<h1>Subclaims (Advanced)</h1>
+<p>Subclaims are smaller protected areas inside a main claim.</p>
+<p>They allow different permissions in different parts of your base.</p>
+<p>Examples:</p>
+<ul>
+<li>Public farm inside your base</li>
+<li>Shop area</li>
+<li>Shared storage room</li>
+</ul>
+<h2>Creating a Subclaim</h2>
+<ol>
+<li>Hold a <strong>Stick</strong></li>
+<li>Mark two corners inside your claim</li>
+</ol>
+<p>The area becomes a <strong>subclaim</strong>.</p>
+<p>Subclaims inherit permissions from the main claim unless changed.</p>
+<hr>
+<h1>Why Claims Are Important</h1>
+<p>Claims protect players from:</p>
+<ul>
+<li>Griefing</li>
+<li>Item theft</li>
+<li>Base destruction</li>
+<li>Players modifying builds without permission</li>
+</ul>
+<p>Always claim important builds such as:</p>
+<ul>
+<li>Houses</li>
+<li>Storage rooms</li>
+<li>Farms</li>
+<li>Villager areas</li>
+<li>Redstone builds</li>
+</ul>
+<hr>
+<h1>Tips for Using Claims</h1>
+<p>Good habits:</p>
+<ul>
+<li>Claim your base early</li>
+<li>Leave space between claims</li>
+<li>Only trust players you know</li>
+<li>Check claim borders before building</li>
+</ul>
+<p>Avoid:</p>
+<ul>
+<li>Claiming land you do not use</li>
+<li>Blocking other players from expanding</li>
+<li>Giving trust to strangers</li>
+</ul>
+<hr>
+<h1>Need Help?</h1>
+<p>If you need help with claims:</p>
+<ul>
+<li>Ask staff in chat</li>
+<li>Use <code>/help</code></li>
+<li>Contact a moderator</li>
+</ul>
+
+  </main>
+
+  <footer>
+  <p>&copy; 2026 Bennett. &mdash; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Licensed under CC BY-NC 4.0</a></p>
+</footer>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

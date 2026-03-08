@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map | LMC Kervian</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="nav-bar">
+
+    <!-- ── Site title (top-left) ────────────────────── -->
+    <a class="site-title" href="/">LMC</a>
+
+    <!-- ── Hamburger (mobile only, auto-generated) ──── -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ── Nav links ────────────────────────────────── -->
+    <!-- Add or remove <li> items here to change the nav -->
+    <ul class="nav-links">
+      <li><a href="/join/">Join</a></li>
+      <li><a href="/commands/">Commands</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/map/">Map</a></li>
+      <li><a href="/worlds/">Worlds</a></li>
+      <li><a href="/staff/">Staff</a></li>
+      <li><a href="/claims/">Claims</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a></li>
+      <!-- <li><a href="/your-page/">Your Page</a></li> -->
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main>
+    
+<div class="embed-page">
+  <h1>Map</h1>
+  <p>View the live server map below, or <a href="http://labyrinth.bh-games.com:8100/" target="_blank" rel="noopener">open it in a new tab</a>.</p>
+  <div class="map-embed">
+    <iframe
+      src="http://labyrinth.bh-games.com:8100/"
+      title="Server Map"
+      loading="lazy"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+  <p>&copy; 2026 Bennett. &mdash; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Licensed under CC BY-NC 4.0</a></p>
+</footer>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

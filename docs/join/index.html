@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | LMC Kervian</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="nav-bar">
+
+    <!-- ── Site title (top-left) ────────────────────── -->
+    <a class="site-title" href="/">LMC</a>
+
+    <!-- ── Hamburger (mobile only, auto-generated) ──── -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ── Nav links ────────────────────────────────── -->
+    <!-- Add or remove <li> items here to change the nav -->
+    <ul class="nav-links">
+      <li><a href="/join/">Join</a></li>
+      <li><a href="/commands/">Commands</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/map/">Map</a></li>
+      <li><a href="/worlds/">Worlds</a></li>
+      <li><a href="/staff/">Staff</a></li>
+      <li><a href="/claims/">Claims</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a></li>
+      <!-- <li><a href="/your-page/">Your Page</a></li> -->
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main>
+    <h1>How to Join</h1>
+<p>The server is <strong>whitelisted</strong>. Contact an admin to get added before joining.</p>
+<p>To get whitelisted, email <a href="mailto:admin@lmc.kervian.com">admin@lmc.kervian.com</a> or find Bennett at Labyrinth.</p>
+<hr>
+<h2>Java Edition</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Server Address</strong></td>
+<td><code>labyrinth.bh-games.com</code></td>
+</tr>
+<tr>
+<td><strong>Port</strong></td>
+<td><code>25565</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Bedrock Edition</h2>
+<p>The server runs <a href="https://geysermc.org/">Geyser</a> and <a href="https://github.com/GeyserMC/Floodgate">Floodgate</a>, so Bedrock players can join too.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Server Address</strong></td>
+<td><code>labyrinth.bh-games.com</code></td>
+</tr>
+<tr>
+<td><strong>Port</strong></td>
+<td><code>19132</code></td>
+</tr>
+</tbody>
+</table>
+<h3>PC &amp; iPad</h3>
+<p>Enter the server address and port above in the <strong>Add Server</strong> screen.</p>
+<h3>Consoles</h3>
+<p>Console support is still being worked out for the new Bedrock UI. Check back later.</p>
+
+  </main>
+
+  <footer>
+  <p>&copy; 2026 Bennett. &mdash; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Licensed under CC BY-NC 4.0</a></p>
+</footer>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

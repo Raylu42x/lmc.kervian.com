@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | LMC Kervian</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="nav-bar">
+
+    <!-- ── Site title (top-left) ────────────────────── -->
+    <a class="site-title" href="/">LMC</a>
+
+    <!-- ── Hamburger (mobile only, auto-generated) ──── -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ── Nav links ────────────────────────────────── -->
+    <!-- Add or remove <li> items here to change the nav -->
+    <ul class="nav-links">
+      <li><a href="/join/">Join</a></li>
+      <li><a href="/commands/">Commands</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/map/">Map</a></li>
+      <li><a href="/worlds/">Worlds</a></li>
+      <li><a href="/staff/">Staff</a></li>
+      <li><a href="/claims/">Claims</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a></li>
+      <!-- <li><a href="/your-page/">Your Page</a></li> -->
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main>
+    
+<div class="home-hero">
+  <h1>Welcome to LMC</h1>
+  <p>The official page for the Labyrinth Minecraft Server.</p>
+
+  <nav class="home-nav" aria-label="Site pages">
+    <a href="/join/">Join</a>
+    <a href="/commands/">Commands</a>
+    <a href="/rules/">Rules</a>
+    <a href="/map/">Map</a>
+    <a href="/worlds/">Worlds</a>
+    <a href="/staff/">Staff</a>
+    <a href="/claims/">Claims</a>
+    <a href="/gallery/">Gallery</a>
+    <a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a>
+  </nav>
+</div>
+
+  </main>
+
+  <footer>
+  <p>&copy; 2026 Bennett. &mdash; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Licensed under CC BY-NC 4.0</a></p>
+</footer>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

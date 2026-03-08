@@ -1,4 +1,3 @@
 node_modules/
-_site/
 src/assets/img/*
 !src/assets/img/.gitkeep

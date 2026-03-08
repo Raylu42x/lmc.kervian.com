@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules | LMC Kervian</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="nav-bar">
+
+    <!-- ── Site title (top-left) ────────────────────── -->
+    <a class="site-title" href="/">LMC</a>
+
+    <!-- ── Hamburger (mobile only, auto-generated) ──── -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ── Nav links ────────────────────────────────── -->
+    <!-- Add or remove <li> items here to change the nav -->
+    <ul class="nav-links">
+      <li><a href="/join/">Join</a></li>
+      <li><a href="/commands/">Commands</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/map/">Map</a></li>
+      <li><a href="/worlds/">Worlds</a></li>
+      <li><a href="/staff/">Staff</a></li>
+      <li><a href="/claims/">Claims</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a></li>
+      <!-- <li><a href="/your-page/">Your Page</a></li> -->
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main>
+    <h1>Server Rules</h1>
+<h2>1. Be Respectful</h2>
+<ul>
+<li>Treat all players with respect.</li>
+<li>No harassment, bullying, or hate speech.</li>
+<li>Keep chat friendly and appropriate.</li>
+</ul>
+<h2>2. No Griefing</h2>
+<ul>
+<li>Do not destroy, modify, or troll other players' builds.</li>
+<li>Ask permission before building right next to someone else's base.</li>
+</ul>
+<h2>3. No Stealing</h2>
+<ul>
+<li>Do not take items from chests, farms, or bases that do not belong to you.</li>
+<li>If a chest is public property be respectful and don't take everything.</li>
+</ul>
+<h2>4. No Spamming</h2>
+<ul>
+<li>Do not spam chat, commands, or advertisements.</li>
+</ul>
+<h2>5. PvP Rules</h2>
+<ul>
+<li>PvP is only allowed in PvP arenas.</li>
+</ul>
+<h2>6. Avoid Lag Machines</h2>
+<ul>
+<li>Large redstone machines or farms that cause lag may be removed.</li>
+</ul>
+<h2>7. Follow Staff Instructions</h2>
+<ul>
+<li>Moderators and admins have the final say.</li>
+<li>If you have a problem, contact staff instead of arguing in chat.</li>
+</ul>
+<h2>8. Use Common Sense</h2>
+<ul>
+<li>If something feels unfair or annoying, don't do it.</li>
+<li>Staff may act on behavior not explicitly listed here.</li>
+</ul>
+<p>Have fun and enjoy playing!</p>
+
+  </main>
+
+  <footer>
+  <p>&copy; 2026 Bennett. &mdash; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Licensed under CC BY-NC 4.0</a></p>
+</footer>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

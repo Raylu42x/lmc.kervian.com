@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Important Commands | LMC Kervian</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="nav-bar">
+
+    <!-- ── Site title (top-left) ────────────────────── -->
+    <a class="site-title" href="/">LMC</a>
+
+    <!-- ── Hamburger (mobile only, auto-generated) ──── -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ── Nav links ────────────────────────────────── -->
+    <!-- Add or remove <li> items here to change the nav -->
+    <ul class="nav-links">
+      <li><a href="/join/">Join</a></li>
+      <li><a href="/commands/">Commands</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/map/">Map</a></li>
+      <li><a href="/worlds/">Worlds</a></li>
+      <li><a href="/staff/">Staff</a></li>
+      <li><a href="/claims/">Claims</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/bugs-and-suggestions/">Bugs &amp; Suggestions</a></li>
+      <!-- <li><a href="/your-page/">Your Page</a></li> -->
+    </ul>
+
+  </nav>
+</header>
+
+
+  <main>
+    <h1>Important Commands</h1>
+<hr>
+<h2>Homes</h2>
+<p>Set and teleport to personal saved locations.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/sethome &lt;name&gt;</code></td>
+<td>Save your current location as a home</td>
+</tr>
+<tr>
+<td><code>/home &lt;name&gt;</code></td>
+<td>Teleport to a saved home</td>
+</tr>
+<tr>
+<td><code>/delhome &lt;name&gt;</code></td>
+<td>Delete a saved home</td>
+</tr>
+<tr>
+<td><code>/homes</code></td>
+<td>List all your saved homes</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Warps</h2>
+<p>Server-wide teleport points set by staff.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/warp &lt;name&gt;</code></td>
+<td>Teleport to a warp point</td>
+</tr>
+<tr>
+<td><code>/warps</code></td>
+<td>List all available warps</td>
+</tr>
+<tr>
+<td><code>/hub</code></td>
+<td>Return to the Hub world</td>
+</tr>
+</tbody>
+</table>
+<p>Common warps: <code>survival</code>, <code>smpworld</code>, <code>creative</code>, <code>oldhub</code>, <code>hide_and_seek</code></p>
+<hr>
+<h2>Claims</h2>
+<p>See the <a href="/claims/">Claims</a> page for the full guide.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/claimslist</code></td>
+<td>Show your claims and available blocks</td>
+</tr>
+<tr>
+<td><code>/trust &lt;player&gt;</code></td>
+<td>Give a player full access to your claim</td>
+</tr>
+<tr>
+<td><code>/untrust &lt;player&gt;</code></td>
+<td>Remove a player's access</td>
+</tr>
+<tr>
+<td><code>/abandonclaim</code></td>
+<td>Delete the claim you are standing in</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>General</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/help</code></td>
+<td>Show available commands</td>
+</tr>
+<tr>
+<td><code>/spawn</code></td>
+<td>Teleport to world spawn</td>
+</tr>
+<tr>
+<td><code>/tpa &lt;player&gt;</code></td>
+<td>Request to teleport to a player</td>
+</tr>
+<tr>
+<td><code>/tpaccept</code></td>
+<td>Accept a teleport request</td>
+</tr>
+<tr>
+<td><code>/tpdeny</code></td>
+<td>Deny a teleport request</td>
+</tr>
+<tr>
+<td><code>/msg &lt;player&gt; &lt;message&gt;</code></td>
+<td>Send a private message</td>
+</tr>
+<tr>
+<td><code>/r &lt;message&gt;</code></td>
+<td>Reply to the last private message</td>
+</tr>
+</tbody>
+</table>
+
+  </main>
+
+  <footer>
+  <p>&copy; 2026 Bennett. &mdash; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Licensed under CC BY-NC 4.0</a></p>
+</footer>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
