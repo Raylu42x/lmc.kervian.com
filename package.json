@@ -1,0 +1,13 @@
+{
+  "name": "lmc-kervian-com",
+  "version": "1.0.0",
+  "description": "LMC Kervian website",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
