@@ -35,4 +35,6 @@ Enter the server address and port above in the **Add Server** screen.
 
 ### Consoles
 
-Console support is still being worked out for the new Bedrock UI. Check back later.
+There are several ways:
+ - **BedrockTogether** — an iOS/Android app that makes any server appear as a LAN game
+ - **Geyser DNS** — may work depending on your platform; still being tested with the new Bedrock UI
